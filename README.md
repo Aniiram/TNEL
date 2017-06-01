@@ -31,4 +31,4 @@ Para conseguir correr o programa é necessário seguir os seguintes passos (Ecli
 8- Já está a funcionar.
 
 
-9- O Projecto cria um ficheiro .txt que deve aparecer no wokspace do projecto
+9- O Projecto cria um ficheiro .txt que deve aparecer na pasta do projecto. Se não aparecer é necessário fazer Refresh ao Projecto (F5)
