@@ -26,9 +26,9 @@ public class SellerAgent extends Agent {
 		this.quickAuction = quickAuction;
 		
 		//Prepare File to write
-		File Fileright = new File(seller.getFileName());
+		File file = new File(seller.getFileName());
 		try {
-			this.pw = new PrintWriter(Fileright);
+			this.pw = new PrintWriter(file);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -304,11 +304,11 @@ public class SellerAgent extends Agent {
     				for (int i = 0; i < buyers.length; i++){
         				
         				if(buyers[i].getName().equals(msg.getSender())){
-    						System.out.println("[SellerAgent] Buyer: " + buyers[i].getName().getLocalName() + " Accept:" + win);
+    						System.out.println("[SellerAgent] Buyer: " + buyers[i].getName().getLocalName() + " Accept:" + win + " Bid: " + bid);
     						
     						//Print on File
     	            		if(seller.isToPrint()){   
-	    						pw.println("[SellerAgent] Buyer: " + buyers[i].getName().getLocalName() + " Accept:" + win);
+	    						pw.println("[SellerAgent] Buyer: " + buyers[i].getName().getLocalName() + " Accept:" + win + " Bid: " + bid);
 	    						pw.flush();
     	            		}
     	            		
@@ -341,6 +341,14 @@ public class SellerAgent extends Agent {
 		            			lose.addReceiver(buyers[i].getName());
 		            			loseReceivers++;
 							}
+	            		}
+						
+						//Print on File
+	            		if(seller.isToPrint()){   
+							pw.println("[SellerAgent] Winner: " + buyers[theWinner].getName().getLocalName());
+							pw.println("[SellerAgent] Winner Bid: " + bid);
+							pw.println(" ");
+							pw.flush();
 	            		}
 						
 						send(win);

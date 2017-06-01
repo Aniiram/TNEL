@@ -77,7 +77,7 @@ public class BuyerAgent extends Agent{
     			public void action() {
     				msg = receive();
     				if(msg != null){
-    					System.out.println("[BuyerAgent] MSG received: " + msg.getContent());
+    					//System.out.println("[BuyerAgent] MSG received: " + msg.getContent());
     					//System.out.println("[BuyerAgent] Sender: " + msg.getSender());
     					
     					switch(msg.getPerformative()){
