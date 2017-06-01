@@ -1,10 +1,10 @@
 # TNEL
 
 
-	Trabalho realizado para a cadeira de TNEL.
+Trabalho realizado para a cadeira de TNEL.
 
 
-	Para conseguir correr o programa é necessário seguir os seguintes passos (Eclipse Neon):
+Para conseguir correr o programa é necessário seguir os seguintes passos (Eclipse Neon):
 
 
 1- Criar novo projecto Java
@@ -28,5 +28,7 @@
 7- Carregar em Ok na janela das propriedades e correr o projecto.
 
 
-	8- Já está a funcionar.
-	9- O Projecto cria um ficheiro .txt que deve aparecer no wokspace do projecto
+8- Já está a funcionar.
+
+
+9- O Projecto cria um ficheiro .txt que deve aparecer no wokspace do projecto
