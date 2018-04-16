@@ -34,6 +34,8 @@ Para conseguir correr o programa é necessário seguir os seguintes passos (Ecli
 9- O Projecto cria um ficheiro .txt que deve aparecer na pasta do projecto. Se não aparecer é necessário fazer Refresh ao Projecto (F5)
 
 
+### English
+
 This project was developed for the curriculum unit of TNEL.
 
 
